@@ -1,0 +1,2 @@
+代理模式：
+在1.0版本中，我封装了淘宝开放平台接口对接的基本类D:\wamp64\www\design_patterns\proxy\RealSubject.php，现在到了1.1版本时，我还用到class RealSubject中的一些方法，但是另外一些方法(比如sendGoods)要限制使用，那么就可以使用代理模式，先确定一个抽象主题角色D:\wamp64\www\design_patterns\proxy\Subject.php定义class RealSubject中已经存在的并且想要继续使用的方法，比如sync()/getStatus(),然后新建一个代理类D:\wamp64\www\design_patterns\proxy\Proxy.php，继承抽象主题类Subject，在实现sync()/getStatus()方法时指向到原来已经封装好的真实主题类RealSubject。
