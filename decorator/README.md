@@ -1,0 +1,3 @@
+装饰模式：
+在传统的编码方式中，我们为了对接第三方的接口，比如sync(),sendGoods()，会先定义一个class生成签名，比如Sign里面的getSign(),然后再定义一个class,比如Orders继承getSign()所在的Sign，获取签名并实现对应的sync(),sendGoods()方法，但是当第三方接口升级签名方式，也就是变更了getSign()方法时，我们通常是要新写一个类重新实现getSign()，比如SignTwo，但是对应的，所有继承原getSign()所在的类Sign的子类都需要做对应的修改，这显然具有很大的风险；使用装饰模式之后，我们把getSign所在的class Sign定义为一个装饰器SignOne,然后在使用时不采取继承的方式，而是在运行的时候添加此装饰器对象到应用class Orders，Orders重新实现getSign()方法为运行时添加的装饰器对象的getSign()方法。这样的话如果SignOne的getSign()升级，我们只需要重新定义一个SignTwo,在运行Orders时将装饰器对象替换成SignTwo，就可以实现新的签名。
+当构件只有一个（Orders）时，可以直接在Orders中重新实现getSign()方法，当有多个时，比如有Orders/Goods等都需要用到getSign,这是可以定义一个抽象构件，在抽象中重写getSign方法，然后Orders/Goods等具体构件继承抽象。
