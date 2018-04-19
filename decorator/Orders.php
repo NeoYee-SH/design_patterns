@@ -1,0 +1,20 @@
+<?php
+/**
+ * Created by yhy
+ * Date: 2018-04-19
+ * Time: 13:16
+ */
+
+namespace decorator;
+
+
+class Orders extends PDDInterface
+{
+
+    public function sync()
+    {
+        $sign = $this->getSign();
+        return $sign . ' sync!';
+    }
+
+}
