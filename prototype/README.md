@@ -1,4 +1,4 @@
-#原型模式
+# 原型模式
 ## 模式定义
 原型模式（Prototype Pattern）是一种创建型设计模式，Prototype模式允许一个对象再创建另外一个可定制的对象，根本无需知道任何如何创建的细节。
 
@@ -34,6 +34,6 @@ Concrete Prototype：具体原型角色
 - 当我们处理的对象比较简单，并且对象之间的区别很小，可能只是很固定的几个属性不同的时候，使用原型模式更合适。
 
 参考资料：
-https://segmentfault.com/a/1190000007531872
-http://laravelacademy.org/post/2546.html
-http://www.imooc.com/article/16973
+- https://segmentfault.com/a/1190000007531872
+- http://laravelacademy.org/post/2546.html
+- http://www.imooc.com/article/16973

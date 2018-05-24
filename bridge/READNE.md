@@ -1,4 +1,4 @@
-#桥接模式：
+# 桥接模式：
 ## 模式定义
 桥接模式(Bridge Pattern)：将抽象部分与它的实现部分分离，使它们都可以独立地变化。它是一种对象结构型模式，又称为柄体(Handle and Body)模式或接口(Interface)模式。
 
@@ -42,6 +42,6 @@ ConcreteImplementor：具体实现类
 桥接模式适用情况包括：需要在构件的抽象化角色和具体化角色之间增加更多的灵活性，避免在两个层次之间建立静态的继承联系；抽象化角色和实现化角色可以以继承的方式独立扩展而互不影响；一个类存在两个独立变化的维度，且这两个维度都需要进行扩展；设计要求需要独立管理抽象化角色和具体化角色；不希望使用继承或因为多层次继承导致系统类的个数急剧增加的系统。
 
 参考资料：
-http://design-patterns.readthedocs.io/zh_CN/latest/structural_patterns/bridge.html
-https://www.jianshu.com/p/0172937b47ab
-https://code-ken.github.io/2016/03/01/DesignPatternWithPHP-9/
+- http://design-patterns.readthedocs.io/zh_CN/latest/structural_patterns/bridge.html
+- https://www.jianshu.com/p/0172937b47ab
+- https://code-ken.github.io/2016/03/01/DesignPatternWithPHP-9/

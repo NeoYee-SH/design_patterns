@@ -1,4 +1,4 @@
-#抽象工厂模式
+# 抽象工厂模式
 ## 模式动机
 在工厂方法模式中具体工厂负责生产具体的产品，每一个具体工厂对应一种具体产品，工厂方法也具有唯一性，一般情况下，一个具体工厂中只有一个工厂方法或者一组重载的工厂方法。但是有时候我们需要一个工厂可以提供多个产品对象，而不是单一的产品对象。
 
@@ -61,4 +61,4 @@ Product：具体产品
 抽象工厂模式适用情况包括：一个系统不应当依赖于产品类实例如何被创建、组合和表达的细节；系统中有多于一个的产品族，而每次只使用其中某一产品族；属于同一个产品族的产品将在一起使用；系统提供一个产品类的库，所有的产品以同样的接口出现，从而使客户端不依赖于具体实现。
 
 参考资料：
-http://design-patterns.readthedocs.io/zh_CN/latest/creational_patterns/abstract_factory.html
+- http://design-patterns.readthedocs.io/zh_CN/latest/creational_patterns/abstract_factory.html

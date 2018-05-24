@@ -1,4 +1,4 @@
-#简单工厂模式
+# 简单工厂模式
 ## 模式定义
 简单工厂模式(Simple Factory Pattern)：又称为静态工厂方法(Static Factory Method)模式，它属于类创建型模式。在简单工厂模式中，可以根据参数的不同返回不同类的实例。简单工厂模式专门定义一个类来负责创建其他类的实例，被创建的实例通常都具有共同的父类。
 
@@ -15,7 +15,7 @@
 
 ![seq_SimpleFactory.jpg](http://www.yihuaiyuan.com/usr/uploads/2018/03/79675834.jpg)
 
-##实例
+## 实例
 某个订单项目需要同步第三方电商平台的订单，这些第三方电商平台包括淘宝、京东、拼多多等，对同步过来的订单都要做更新状态和发货操作，那么淘宝、京东和拼多多的服务类可以基于一个共同的父类OrderInterface，这个父类定义了淘宝、京东和拼多多服务类需要实现的方法，比如sync、getStatus、sendGoods,然后我们定义一个工厂类，根据不同的参数，实例化不同的第三方平台服务就可以。
 
 
@@ -47,4 +47,4 @@
 
 
 参考资料：
-http://design-patterns.readthedocs.io/zh_CN/latest/creational_patterns/simple_factory.html
+- http://design-patterns.readthedocs.io/zh_CN/latest/creational_patterns/simple_factory.html

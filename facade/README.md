@@ -1,4 +1,4 @@
-#外观模式
+# 外观模式
 ## 模式定义
 外观模式(Facade Pattern)：外部与一个子系统的通信必须通过一个统一的外观对象进行，为子系统中的一组接口提供一个一致的界面，外观模式定义了一个高层接口，这个接口使得这一子系统更加容易使用。外观模式又称为门面模式，它是一种对象结构型模式。
 ## 模式结构
@@ -43,4 +43,4 @@ SubSystem:子系统角色
 外观模式适用情况包括：要为一个复杂子系统提供一个简单接口；客户程序与多个子系统之间存在很大的依赖性；在层次化结构中，需要定义系统中每一层的入口，使得层与层之间不直接产生联系。
 
 参考资料：
-http://design-patterns.readthedocs.io/zh_CN/latest/structural_patterns/facade.html
+- http://design-patterns.readthedocs.io/zh_CN/latest/structural_patterns/facade.html
