@@ -1,4 +1,4 @@
-#工厂方法模式
+# 工厂方法模式
 ## 模式定义
 工厂方法模式(Factory Method Pattern)又称为工厂模式，也叫虚拟构造器(Virtual Constructor)模式或者多态工厂(Polymorphic Factory)模式，它属于类创建型模式。在工厂方法模式中，工厂父类负责定义创建产品对象的公共接口，而工厂子类则负责生成具体的产品对象，这样做的目的是将产品类的实例化操作延迟到工厂子类中完成，即通过工厂子类来确定究竟应该实例化哪一个具体产品类。
 
@@ -41,4 +41,4 @@ ConcreteFactory：具体工厂
 工厂方法模式适用情况包括：一个类不知道它所需要的对象的类；一个类通过其子类来指定创建哪个对象；将创建对象的任务委托给多个工厂子类中的某一个，客户端在使用时可以无须关心是哪一个工厂子类创建产品子类，需要时再动态指定。
 
 参考资料：
-http://design-patterns.readthedocs.io/zh_CN/latest/creational_patterns/factory_method.html
+- http://design-patterns.readthedocs.io/zh_CN/latest/creational_patterns/factory_method.html
