@@ -1,4 +1,4 @@
-#design_patterns
+# design_patterns
 ##什么是设计模式？
 在软件工程中，设计模式（design pattern）是对软件设计中普遍存在（反复出现）的各种问题，所提出的解决方案。
 ##为什么学设计模式？
