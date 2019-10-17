@@ -19,7 +19,7 @@ class Singleton
     /**
      * @return Singleton
      */
-    public static function getInstance():Singleton
+    public static function getInstance():self
     {
         self::$instance instanceof self || self::$instance = new self();
 
